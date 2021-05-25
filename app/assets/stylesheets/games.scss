@@ -1,0 +1,51 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+$gray: #F4F4F4;
+
+body {
+   background: $gray;
+   color: rgb(94, 92, 92);
+ }
+
+ a {
+   color: rgb(80, 80, 241);
+   &:hover {
+     color: rgb(37, 37, 141);
+   }
+ }
+
+ .container {
+   margin: 0 auto;
+   text-align: center;
+   width: 600px;
+ }
+  .container h1, h2 {
+  color: rgb(206, 101, 118);
+  }
+
+  .flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+ .tile {
+   margin: 0 auto;
+   border-style: solid;
+   border-color: rgb(206, 101, 118);
+   background-color: azure;
+   border-radius: 5px;
+   border-width: 3px;
+   text-align: left;
+   padding: 10px;
+   color:  rgb(121, 116, 116);
+   font-weight: bold;
+ }
+
+ .scorecard {
+  background-color: azure;
+  border-radius: 5px;
+  border-width: 3px;
+  color:rgb(121, 116, 116)
+ }

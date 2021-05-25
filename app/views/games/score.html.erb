@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>WELCOME TO LONG ASS WORD GAME!</h1>
+  <div class="card">
+    <h2>Your word: <%= @word %></h2>
+    
+  </div>
+    <div class="scorecard"> 
+      <h3>Time Taken to answer:<%= @time %></h3>
+      
+      <% if @in_the_grid && @correct_word %>
+        <h3>Message: Congratulations! </h3>
+        <% elsif @in_the_grid == false%>
+        <h3>Message: <%= @word %> not in the grid </h3>
+        <% else %>
+        <h3>Message: <%= @word %> not a real word </h3>
+      <% end %>
+      
+      
+    </div>
+    
+
+  <%= link_to "Play a new game", new_path %>
+</div>
